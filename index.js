@@ -32,7 +32,8 @@ function SystemJSNodeLoader() {
   if (nodeResolver) {
     configNodePath(this, 'traceur', 'traceur/bin/traceur.js');
     configNodePath(this, 'traceur-runtime', 'traceur/bin/traceur-runtime.js');
-    configNodePath(this, 'babel', 'babel-core/browser.js');
+    configNodePath(this, 'babel', 'babel-standalone/babel.js');
+    
     configNodePath(this, 'babel/external-helpers', 'babel-core/external-helpers.js');
     configNodePath(this, 'babel-runtime/*', 'babel-runtime', true);
   }
